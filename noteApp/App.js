@@ -116,4 +116,6 @@ const styles = StyleSheet.create({
   },
 });
 
+const rootReducer = combineReducers({...reducers});
+
 export default App;
