@@ -117,5 +117,6 @@ const styles = StyleSheet.create({
 });
 
 const rootReducer = combineReducers({...reducers});
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default App;
