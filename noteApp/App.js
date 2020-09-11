@@ -31,6 +31,9 @@ import {
 
 const App = () => {
   return (
+    <Provdider store={store}>
+      <View/>
+    </Provider>
     <Fragment>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
