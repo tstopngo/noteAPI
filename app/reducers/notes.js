@@ -8,6 +8,12 @@ const INITIAL_STATE = {
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case 'FETCH_NOTES':
+      return {
+        ...state,
+        status: 'loading',
+        error: null,
+      };
     default:
       return state;
   }
